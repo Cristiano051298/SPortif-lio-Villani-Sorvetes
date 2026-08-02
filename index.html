@@ -4,140 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villani Eventos - Portfólio de Apresentação</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #d4edf4;
-        }
-        h1, h2, h3, .serif {
-            font-family: 'Playfair Display', serif;
-        }
-        .bg-villani-main {
-            background-color: #d4edf4;
-        }
-        .text-villani-gold {
-            color: #8B732D;
-        }
-        .text-villani-cream {
-            color: #fffee2;
-        }
-        /* Sombra personalizada para o título */
-        .title-shadow {
-            text-shadow: 3px 3px 6px rgba(139, 115, 45, 0.3);
-        }
-        .bg-villani-gold {
-            background-color: #8B732D;
-        }
-        .border-villani-blue {
-            border-color: #b8dae4;
-        }
-    </style>
 </head>
 <body class="text-gray-800">
 
     <!-- Hero Section (Fundo Sólido #d4edf4) -->
-    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-villani-main">
-        <div class="relative z-10 text-center px-4 max-w-4xl">
-            <div class="mb-10">
-                <h1 class="text-6xl md:text-9xl text-villani-cream italic leading-none title-shadow">Ice Cream</h1>
-                <p class="text-3xl md:text-5xl text-villani-cream italic mt-2 md:mt-4 opacity-90 title-shadow serif">by Villani</p>
+   <header class="header">
+        <div class="header-container">
+            <div class="header-title-group">
+                <h1 class="header-title">Ice Cream</h1>
+                <p class="header-subtitle">by Villani</p>
             </div>
-            <p class="text-xl md:text-2xl font-light tracking-widest uppercase mb-4 text-gray-600">A Tradição Italiana no Coração da sua Festa</p>
-            <div class="w-32 h-px bg-villani-gold mx-auto mt-10 opacity-60"></div>
+            <p class="header-tagline">A Tradição Italiana no Coração da sua Festa</p>
+            <div class="header-divider"></div>
         </div>
     </header>
 
-    <!-- Secção Origens -->
-    <section class="py-24 px-6 max-w-6xl mx-auto bg-villani-main">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
+    <!-- SECÇÃO ORIGENS (HTML)-->
+    <section class="section-padding container-medium">
+        <div class="grid-2">
             <div>
-                <h2 class="text-4xl text-villani-gold mb-8 italic"> Nossas Origens, Sua Celebração</h2>
-                <p class="text-lg leading-relaxed mb-6 text-gray-700">
-                    A história do Villani nasce da paixão pela gelataria clássica. As nossas receitas atravessaram gerações, preservando o cuidado com a seleção de ingredientes e o processo de produção artesanal.
+                <h2 class="section-title">Nossas Origens, Sua Celebração</h2>
+                <p class="origens-text">
+                    A história da Villani nasce da paixão pela gelataria clássica. As nossas receitas atravessaram gerações, preservando o cuidado com a seleção de ingredientes e o processo de produção artesanal.
                 </p>
-                <p class="text-lg leading-relaxed text-gray-700">
-                    Em cada colherada, os seus convidados sentem a essência de uma família que dedica a vida para criar o sorvete perfeito: com a cremosidade ideal, sabores equilibrados e texturas que encantam.
+                <p class="origens-text">
+                    Em cada colherada, os seus convidados sentem a essência de uma família que dedica a vida a criar o sorvete perfeito: com a cremosidade ideal, sabores equilibrados e texturas que encantam.
                 </p>
             </div>
-            <!-- Revertido para a foto original do copinho (IMG_7293.jpg) -->
-            <div class="rounded-2xl overflow-hidden shadow-2xl transform rotate-1 border-4 border-white">
-                <img src="/img/WhatsApp Image 2026-03-09 at 22.45.32.jpeg" alt="[Imagem de Sorvete Villani em detalhe]" class="w-full h-full object-cover" onerror="this.src='/img/WhatsApp Image 2026-03-09 at 22.45.32.jpeg'">
+            <div class="origens-img-wrap">
+                <img src="/img/WhatsApp Image 2026-03-09 at 22.45.32.jpeg" alt="[Imagem de Sorvete Villani em detalhe]" onerror="this.src='/img/WhatsApp Image 2026-03-09 at 22.45.32.jpeg'">
             </div>
         </div>
-    </section>
+    </section> 
 
-    <!-- Secção Diferencial (Branco) -->
-    <section class="bg-white py-24 px-6 shadow-inner">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl text-villani-gold mb-16 italic">🍨 O Diferencial Villani: Sorvete de Massa Especial</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50/50">
-                    <h3 class="text-2xl mb-4 text-villani-gold italic">Produção Familiar</h3>
-                    <p class="text-gray-600">Diferente das opções industriais, o sorvete Villani é produzido artesanalmente pela nossa família para o seu evento.</p>
+   <!--SECÇÃO DIFERENCIAL (HTML)-->
+    <section class="bg-white-section section-padding">
+        <div class="container-medium text-center">
+            <h2 class="section-title">🍨 O Diferencial Villani: Sorvete de Massa Especial</h2>
+            <div class="grid-3">
+                <div class="card-diferencial">
+                    <h3 class="card-diferencial-title">Produção Familiar</h3>
+                    <p class="card-diferencial-text">Diferente das opções industriais, o sorvete Villani é produzido artesanalmente pela nossa família para o seu evento.</p>
                 </div>
-                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50/50">
-                    <h3 class="text-2xl mb-4 text-villani-gold italic">Massa Premium</h3>
-                    <p class="text-gray-600">Conhecido pela suavidade e pureza — do clássico Doce de Leite à textura sedosa do Ninho Trufado.</p>
+                <div class="card-diferencial">
+                    <h3 class="card-diferencial-title">Massa Premium</h3>
+                    <p class="card-diferencial-text">Conhecido pela suavidade e pureza — do clássico Doce de Leite à textura sedosa do Ninho Trufado.</p>
                 </div>
-                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50/50">
-                    <h3 class="text-2xl mb-4 text-villani-gold italic">Ingredientes Reais</h3>
-                    <p class="text-gray-600">Flocos com pedaços de chocolate selecionados e frutas frescas que garantem o sabor inconfundível.</p>
+                <div class="card-diferencial">
+                    <h3 class="card-diferencial-title">Ingredientes Reais</h3>
+                    <p class="card-diferencial-text">Flocos com pedaços de chocolate selecionados e frutas frescas que garantem o sabor inconfundível.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Secção Estrutura -->
-    <section class="py-24 px-6 max-w-7xl mx-auto bg-villani-main">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl text-villani-gold mb-4 italic">🚲 Estrutura Completa e Experiência Premium</h2>
-            <p class="text-xl text-gray-500 max-w-2xl mx-auto">Uma experiência gastronómica e visual desenhada para momentos inesquecíveis.</p>
+    <section class="section-padding container-large">
+        <div class="text-center">
+            <h2 class="section-title">🚲 Estrutura Completa e Experiência Premium</h2>
+            <p class="origens-text text-center" style="max-width: 40rem; margin: 0 auto;">Uma experiência gastronómica e visual desenhada para momentos inesquecíveis.</p>
         </div>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                <img src="img/EA3BB9C7-C7B6-4583-A0B6-EDFB9384DC83.jpg" class="w-full h-full object-cover" onerror="this.src='img/EA3BB9C7-C7B6-4583-A0B6-EDFB9384DC83.jpg'">
+        <div id="carrossel">
+
+            <img class="botao" src="/img/esquerda.png" alt="">
+            <div class="grid-galeria">
+                <div id="img1" class="galeria-item">
+                    <img src="img/EA3BB9C7-C7B6-4583-A0B6-EDFB9384DC83.jpg" alt="[Carrinho de sorvete de dia no evento]" onerror="error">
+                </div>
+                <div id="img2" class="galeria-item">
+                     <img src="img/G&C-358_Original.JPG" alt="[Carrinho de sorvete iluminado de noite no evento]" onerror="terror">
+                 </div>
+                <div id="img3" class="galeria-item">
+                     <img src="img/WhatsApp Image 2026-03-22 at 19.56.58.jpeg" alt="[Crianças curtindo sorvete]" onerror="error">
+                </div>
+                <div id="img4" class="galeria-item">
+                     <img src="img/G&C-1653_Original.JPG" alt="[Crianças a pedir sorvete no carrinho da Villani]" onerror="error">
+                </div>
+                <div id="img5" class="galeria-item">
+                     <img src="img/IMG_7362.JPG" alt="[Cones de sorvete sendo preparados no evento]" onerror="error">
+                </div>
+                <div id="img6" class="galeria-item">
+                     <img src="img/Sabado_-203.jpg" alt="[Comemorando a inauguração]" onerror="error">
+                </div>
             </div>
-            <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                <img src="img/G&C-358_Original.JPG" class="w-full h-full object-cover" onerror="this.src='img/G&C-358_Original.JPG'">
-            </div>
-            <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                <img src="img/G&C-1653_Original.JPG" class="w-full h-full object-cover" onerror="this.src='img/G&C-1653_Original.JPG'">
-            </div>
-            <!-- Revertido para a foto original do cone (2A97DD55-5E3B-405F-8D24-BBD61F3FE889.jpg) -->
-            <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                <img src="img/IMG_7362.JPG" class="w-full h-full object-cover" onerror="this.src='img/IMG_7362.JPG'">
-            </div>
+            <img class="botao" src="/img/direita.png" alt="">
+
         </div>
 
-        <div class="mt-20 grid md:grid-cols-3 gap-12 text-center">
-            <div class="px-4">
-                <div class="text-3xl mb-4">✨</div>
-                <strong class="text-xl block mb-2 text-villani-gold italic">Infraestrutura Charmosa</strong>
-                <p class="text-gray-600">Carrinhos personalizados com iluminação que se adaptam harmoniosamente à decoração da sua festa.</p>
+        <div class="features-row">
+            <div>
+                <div class="feature-icon">✨</div>
+                <h4 class="feature-title">Infraestrutura Charmosa</h4>
+                <p class="feature-desc">Carrinhos personalizados com iluminação que se adaptam harmoniosamente à decoração da sua festa.</p>
             </div>
-            <div class="px-4">
-                <div class="text-3xl mb-4">👨‍🍳</div>
-                <strong class="text-xl block mb-2 text-villani-gold italic">Serviço Profissional</strong>
-                <p class="text-gray-600">Equipe uniformizada e dedicada exclusivamente a servir os seus convidados com elegância e cordialidade.</p>
+            <div>
+                <div class="feature-icon">👨‍🍳</div>
+                <h4 class="feature-title">Serviço Profissional</h4>
+                <p class="feature-desc">Equipe uniformizada e dedicada exclusivamente a servir os seus convidados com elegância e cordialidade.</p>
             </div>
-            <div class="px-4">
-                <div class="text-3xl mb-4">🍨</div>
-                <strong class="text-xl block mb-2 text-villani-gold italic">Tudo Incluso</strong>
-                <p class="text-gray-600">Fornecemos casquinhas, copinhos, colheres e guardanapos para uma experiência livre de preocupações.</p>
+            <div>
+                <div class="feature-icon">🍨</div>
+                <h4 class="feature-title">Tudo Incluso</h4>
+                <p class="feature-desc">Fornecemos casquinhas, copinhos, colheres e guardanapos para uma experiência livre de preocupações.</p>
             </div>
         </div>
     </section>
 
-    <!-- Secção Catálogo -->
-    <section class="py-24 px-6 bg-villani-main">
-        <div class="max-w-4xl mx-auto bg-white p-12 rounded-[40px] shadow-2xl border-b-8 border-gray-100">
-            <h2 class="text-4xl text-center text-villani-gold mb-12 italic">Catálogo de Sabores</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-12 text-gray-700">
-                <ul class="space-y-3 border-l-2 border-villani-main pl-4">
+<!--SECÇÃO PLANOS E INVESTIMENTOS (HTML)-->
+    <section class="bg-white-section section-padding">
+        <div class="container-medium">
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h2 class="section-title">📊 Planos e Investimentos</h2>
+                <p class="card-diferencial-text" style="max-width: 45rem; margin: 0 auto;">Escolha o pacote que melhor se adapta à dimensão da sua celebração. Todos os valores são calculados para garantir a máxima qualidade e frescura.</p>
+            </div>
+
+            <div class="budget-grid">
+                <div class="budget-card">
+                    <span class="budget-card-number">100</span>
+                    <p class="budget-card-label">Convidados</p>
+                    <div class="budget-card-price">R$ 2.200</div>
+                </div>
+                <div class="budget-card">
+                    <span class="budget-card-number">150</span>
+                    <p class="budget-card-label">Convidados</p>
+                    <div class="budget-card-price">R$ 3.300</div>
+                </div>
+                <div class="budget-card">
+                    <span class="budget-card-number">200</span>
+                    <p class="budget-card-label">Convidados</p>
+                    <div class="budget-card-price">R$ 4.400</div>
+                </div>
+                <div class="budget-card">
+                    <span class="budget-card-number">500</span>
+                    <p class="budget-card-label">Convidados</p>
+                    <div class="budget-card-price">R$ 11.000</div>
+                </div>
+            </div>
+
+            <div class="budget-info-wrapper">
+                <!-- O que está incluso -->
+                <div class="info-box">
+                    <h3 class="info-box-title">O que está incluso:</h3>
+                    <p class="info-box-desc">
+                        No orçamento está incluso o aluguel do carrinho de sorvete (com iluminação), customização à frente do carrinho com a arte de sua preferência, o transporte do carrinho ao local do evento e disponibilizamos dois de nossos atendentes para servir os sorvetes durante o seu evento considerando todos os descartáveis e utensílios necessários (casquinhas, copinhos, colheres).
+                    </p>
+                </div>
+
+                <!-- Formas de Pagamento -->
+                <div class="info-box">
+                    <h3 class="info-box-title">Condições de Pagamento:</h3>
+                    <ul class="list-condicoes">
+                        <li class="list-condicoes-item">
+                            <span class="list-condicoes-bullet">•</span>
+                            <span><strong>Transferência à vista:</strong> 5% de desconto.</span>
+                        </li>
+                        <li class="list-condicoes-item">
+                            <span class="list-condicoes-bullet">•</span>
+                            <span><strong>Parcelado:</strong> 20% de entrada e o restante até a data do evento.</span>
+                        </li>
+                    </ul>
+                    <div class="pix-container">
+                        <p class="pix-title">Pagamento via PIX</p>
+                        <p class="pix-key-badge">Chave CPF: 050.524.318.05</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECÇÃO CATÁLOGO DE SABORES (HTML)-->
+    <section class="section-padding">
+        <div class="container-small catalog-container">
+            <h2 class="section-title text-center" style="margin-bottom: 3rem;">Catálogo de Sabores</h2>
+            <div class="catalog-grid">
+                <ul class="catalog-col">
                     <li>Abacaxi</li>
                     <li>Ameixa</li>
                     <li>Banana</li>
@@ -147,7 +191,7 @@
                     <li>Chocolate</li>
                     <li>Chocolate Branco</li>
                 </ul>
-                <ul class="space-y-3 border-l-2 border-villani-main pl-4">
+                <ul class="catalog-col">
                     <li>Creme</li>
                     <li>Crocante</li>
                     <li>Doce de Leite</li>
@@ -157,7 +201,7 @@
                     <li>Goiaba</li>
                     <li>Leite Condensado</li>
                 </ul>
-                <ul class="space-y-3 border-l-2 border-villani-main pl-4">
+                <ul class="catalog-col">
                     <li>Mousse de Maracujá</li>
                     <li>Ninho Trufado</li>
                     <li>Nozes</li>
@@ -168,45 +212,47 @@
                     <li>Torta de Limão</li>
                 </ul>
             </div>
-            <div class="mt-12 pt-8 border-t border-gray-100 text-center">
-                <p class="italic text-villani-gold font-medium">Opções Veganas / Sem Leite: Limão e Maracujá</p>
+            <div class="catalog-divider-line text-center">
+                <p class="catalog-veg-info">Opções Veganas / Sem Leite: Limão e Maracujá</p>
             </div>
         </div>
     </section>
 
-    <!-- Informações de Contato -->
-    <section class="py-24 px-6 max-w-4xl mx-auto text-center bg-villani-main">
-        <h2 class="text-4xl text-villani-gold mb-8 italic">Informações para Contato</h2>
-        <p class="text-lg mb-12 text-gray-600">
-            Atendemos celebrações de 50 a 500 convidados com orçamentos dimensionados sob medida para o seu evento.
-        </p>
-        
-        <div class="bg-white p-10 rounded-3xl shadow-lg inline-block text-left relative overflow-hidden border border-gray-100 ">
-            <div class="absolute top-0 right-0 w-24 h-24 bg-villani-main opacity-40 rounded-bl-full"></div>
-            <div class="space-y-6 relative z-10">
-                <div class="flex items-center text-xl text-gray-700">
-                    <span class="w-10 h-10 flex items-center justify-center bg-villani-main rounded-full mr-4 text-villani-gold">📞</span>
-                    <span>(19) 99926-3788</span>
-                </div>
-                <div class="flex items-center text-xl text-gray-700">
-                    <span class="w-10 h-10 flex items-center justify-center bg-villani-main rounded-full mr-4 text-villani-gold">📸</span>
-                    <span>@villani.sorvetes</span>
-                </div>
-                <div class="flex items-center text-xl text-gray-700">
-                    <span class="w-10 h-10 flex items-center justify-center bg-villani-main rounded-full mr-4 text-villani-gold">✉️</span>
-                    <span>villani.eventos@gmail.com</span>
+    <!--SECÇÃO INFORMAÇÕES DE CONTATO (HTML)-->
+    <section class="section-padding text-center">
+        <div class="container-small">
+            <h2 class="section-title">Informações para Contacto</h2>
+            <p class="contact-intro">
+                Atendemos celebrações de 50 a 500 convidados com orçamentos dimensionados sob medida para o seu evento.
+            </p>
+            
+            <div class="contact-card">
+                <div class="contact-card-bg-detail"></div>
+                <div class="contact-items-list">
+                    <div class="contact-item">
+                        <span class="contact-icon-circle">📞</span>
+                        <span>(19) 99926-3788</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon-circle">📸</span>
+                        <span>@villani.sorvetes</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon-circle">✉️</span>
+                        <span>villani.eventos@gmail.com</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="mt-20">
-            <p class="text-villani-gold italic text-xl">"Transformando celebrações em momentos inesquecíveis."</p>
+            <div>
+                <p class="signature-phrase">"Transformando celebrações em momentos inesquecíveis."</p>
+            </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-xs text-gray-400 uppercase tracking-widest bg-villani-main border-t border-gray-200/50">
+    <!--RODAPÉ (HTML)-->
+    <footer class="footer">
         &copy; 2024 Villani Sorvetes Artesanais | Portfólio de Apresentação
     </footer>
-
 </body>
 </html>
